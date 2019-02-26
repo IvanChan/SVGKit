@@ -32,4 +32,6 @@ typedef enum CSSUnitType
 @property(nonatomic,strong) NSString* cssText;
 @property(nonatomic) CSSUnitType cssValueType;
 
+- (id)initWithUnitType:(CSSUnitType) t;
+
 @end

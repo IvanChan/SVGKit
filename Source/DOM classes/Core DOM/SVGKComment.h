@@ -14,7 +14,7 @@
 // macOS's out-of-date Carbon API defined the `Comment` struct and cause naming conflict, so we need re-define it and use macro to avoid changing exist API
 #define Comment SVGKComment
 #endif
-@interface Comment : CharacterData
+@interface SVGKComment : CharacterData
 
 - (id)initWithValue:(NSString*) v;
 

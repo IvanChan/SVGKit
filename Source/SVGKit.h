@@ -39,7 +39,7 @@ FOUNDATION_EXPORT const unsigned char SVGKitFramework_VersionString[];
 #import "Attr.h"
 #import "CDATASection.h"
 #import "CharacterData.h"
-#import "Comment.h"
+#import "SVGKComment.h"
 #import "CSSStyleDeclaration.h"
 #import "CSSRule.h"
 #import "CSSStyleSheet.h"

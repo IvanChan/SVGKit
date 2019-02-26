@@ -144,7 +144,12 @@
 
 -(void) setProperty:(NSString*) propertyName value:(NSString*) value priority:(NSString*) priority
 {
-	NSAssert(FALSE, @"CSS 'property priorities' - Not supported");
+    if ([propertyName length] <= 0) return;
+    
+    CSSValue *cssValue = [[CSSValue alloc] initWithUnitType:CSS_CUSTOM];
+    cssValue.cssText = value;
+    [self.internalDictionaryOfStylesByCSSClass setObject:cssValue forKey:propertyName];
+    //    NSAssert(FALSE, @"CSS 'property priorities' - Not supported");
 }
 
 -(NSString*) item:(long) index
